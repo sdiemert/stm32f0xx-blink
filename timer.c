@@ -90,20 +90,6 @@ void initTimer(void)
 
 }
 
-uint8_t state = 0;
-
-void TIM2_IRQHandler(void){
-
-	if(state){
-		ledOn();
-		state = 1;
-	}else{
-		ledOff();
-		state = 0;
-	}
-
-}
-
 int main(void)
 {
 
