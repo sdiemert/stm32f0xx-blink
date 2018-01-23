@@ -1,4 +1,4 @@
-# STM32f00xx Standard Peripheral Sample Code
+# STM32f0xx Standard Peripheral Sample Code
 
 A simple HelloWorld style programs for the STM32F0xx board (this works with the Nucleo demo board).
 
@@ -13,4 +13,4 @@ This code uses the Standard Peripheral hardware libraries for the STM32F0 instea
 - `intr.c` - respond to GPIO external interrupts (e.g., a button push).
 - `timer.c` - a simple timer example using polling.
 - `timer-intr.c` - use a timer to invoke an interrupt and change an LED.
-` `pwm.c` - generate a PWM signal on PB4.
+- `pwm.c` - generate a PWM signal on PB4.
