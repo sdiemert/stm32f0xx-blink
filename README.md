@@ -10,3 +10,7 @@ This code uses the Standard Peripheral hardware libraries for the STM32F0 instea
 
 - `blink.c` - blink the LED on and off at a fixed rate, the typical "hello world" of embedded systems.
 - `button.c` - turn the light on when the button is depressed and turn it off otherwise.
+- `intr.c` - respond to GPIO external interrupts (e.g., a button push).
+- `timer.c` - a simple timer example using polling.
+- `timer-intr.c` - use a timer to invoke an interrupt and change an LED.
+` `pwm.c` - generate a PWM signal on PB4.
