@@ -14,3 +14,4 @@ This code uses the Standard Peripheral hardware libraries for the STM32F0 instea
 - `timer.c` - a simple timer example using polling.
 - `timer-intr.c` - use a timer to invoke an interrupt and change an LED.
 - `pwm.c` - generate a PWM signal on PB4.
+- `spi.c` - send a simple SPI signal one direction (to a logic analyzer).
