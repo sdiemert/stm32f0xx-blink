@@ -21,6 +21,22 @@
 #define SPI_SCK_PORT GPIOA
 #define SPI_CS_PORT GPIOC
 
+// use this to track milliseconds elapsed.
+volatile uint32_t milli = 0;
+
+void delay_ms(uint32_t m){
+	volatile uint32_t start = milli;
+	while(milli - start < m) asm("nop");
+}
+
+/**
+ * Called by system every SysTick (1ms) as defined
+ * in main.
+ */
+void SysTick_Handler(void){
+	milli++;
+}
+
 void setupSPI(void)
 {
 	// enable relevant clocks
